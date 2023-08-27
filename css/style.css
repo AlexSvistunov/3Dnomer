@@ -1,0 +1,13 @@
+@import '../css/normalize.css';
+@import '../css/variables.css';
+@import '../css/fonts.css';
+@import '../css/overall.css';
+
+/* --------------- */
+
+@import '../components/header.css';
+@import '../components/hero.css';
+@import '../components/about.css';
+@import '../components/souvenir.css';
+@import '../components/relic.css';
+@import '../components/works.css';

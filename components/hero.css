@@ -1,0 +1,64 @@
+
+.hero {
+    position: relative;
+    padding:  0 0 114px;
+}
+.hero__title {
+    font-family: var(--second-family);
+    max-width: 742px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    font-size: 53px;
+    line-height: 140%;
+
+}
+
+.hero__btn {
+    padding: 13px 53px;
+    color: var(--white-color);
+    min-height: 53px;
+}
+
+.hero__socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 19px;
+    left: 104px;
+}
+
+.hero__socials-item:not(:last-child) {
+    margin-bottom: 16px;
+
+}
+
+.socials__item-link {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.socials__item-link--wa{
+    background-image: url('../images/icons/whatsapp.svg');
+}
+
+.socials__item-link--vk {
+    background-image: url('../images/icons/vk.svg');
+}
+
+.socials__item-link--fb {
+    background-image: url('../images/icons/facebook.svg');
+}
+
+.socials__item-link--inst {
+    background-image: url('../images/icons/inst.svg');
+}
+
+
+
+
+

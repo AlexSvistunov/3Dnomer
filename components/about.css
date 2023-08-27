@@ -1,0 +1,27 @@
+.about {
+    padding-bottom: 143px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.about__text {
+    max-width: 707px;
+}
+
+.about__descr:not(:last-child) {
+    margin-bottom: 45px;
+}
+
+.about__title {
+    margin-bottom: 26px;
+}
+
+.about__descr {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 178%;
+}

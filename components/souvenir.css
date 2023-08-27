@@ -1,0 +1,62 @@
+.souvenir {
+    padding-bottom: 85px;
+}
+
+.souvenir__title {
+    margin-bottom: 44px;
+}
+
+.souvenir__list {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 35px;
+    margin-bottom: 34px;
+
+}
+
+.souvenir__item {
+    grid-column: 2 span;
+}
+
+.img-big {
+    margin-bottom: 14px;
+
+}
+
+.souvenir__item-name {
+    font-family: var(--second-family);
+    font-size: 21px;
+    line-height: 147%;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+}
+
+.souvenir__item-price {
+    padding: 0 60px 14px 8px;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+.btn-cart {
+    background-image: url('../images/icons/cart.svg');
+    background-size: 16px 18px;
+    background-repeat: no-repeat;
+    background-position: 80px 13px;
+}
+
+
+.souvenir__item-btn--1 {
+    margin-bottom: 14px;
+}
+
+
+
+.souvenir__btn {
+    padding: 18px 60px;
+    min-width: 431px;
+    min-height: 62px;
+    font-weight: 700;
+
+}
