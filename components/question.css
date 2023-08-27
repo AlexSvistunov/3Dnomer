@@ -1,0 +1,143 @@
+.question {
+    padding-bottom: 160px;
+}
+
+.question__title {
+    margin-bottom: 35px;
+
+}
+
+
+
+.question__item {
+    counter-increment: cardCounter;
+}
+
+
+
+.question__item:not(:last-child) {
+    margin-bottom: 54px;
+}
+
+.question__item-title {
+    font-size: 22px;
+    color: var(--dark-color);
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+
+.question__item-title::before {
+    content: counter(cardCounter, decimal-leading-zero);
+    position: absolute;
+    top: 0;
+    left: -35px;
+    font-size: 22px;
+    color: var(--dark-color);
+}
+
+
+.question__item-box {
+    position: relative;
+    padding: 27px 33px 23px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BDD9C0;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.clickable {
+    position: absolute;
+    inset: 0;
+}
+
+
+
+
+.question__item-btn {
+    width: 20px;
+    height: 11px;
+    position: relative;
+}
+
+.question__item-btn::before,
+.question__item-btn::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: var(--dark-color);
+    left: 0;
+    top: 3px;
+
+}
+
+.question__item-btn::before{
+    transform: rotate(45deg);
+    left: 4.5px;
+    transition: transform .35s ease-in-out;
+
+
+}
+
+.question__item-btn::after{
+    transform: rotate(-45deg);
+    left: auto;
+    right: 0;
+    transition: transform .35s ease-in-out;
+
+
+}
+
+.question__item-content {
+    display: none;
+    min-height: 176px;
+    padding: 26px 31px 31px 41px;
+    background-color: var(--white-color);   
+    box-shadow: 0px 4px 53px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+
+.question__item.active .question__item-box {
+    background-color: #96B499;
+}
+
+.question__item.active .question__item-content {
+    display: block;
+  }
+
+  .question__item.active .question__item-btn::before {
+    transform: rotate(-45deg);
+    transition: transform .35s ease-in-out;
+  }
+
+  .question__item.active .question__item-btn::after {
+    transform: rotate(45deg);
+    transition: transform .35s ease-in-out;
+  }
+
+
+.question__item-thing {
+    display: flex;
+
+}
+
+.question__item-number {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,6 @@
 
 .hero {
-    position: relative;
-    padding:  0 0 114px;
+    padding: 0 0 114px;
 }
 .hero__title {
     font-family: var(--second-family);
@@ -22,9 +21,9 @@
 .hero__socials {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 19px;
-    left: 104px;
+    margin-right: 105px;
+    transform: translateY(-36px);
+
 }
 
 .hero__socials-item:not(:last-child) {

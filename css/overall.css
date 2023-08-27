@@ -82,6 +82,14 @@ img {
     padding: 0 15px;
 }
 
+.hero__container {
+    display: flex;
+    align-items: center;
+    max-width: 1281px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .section-title {
     font-family: var(--second-family);
     text-align: center;
