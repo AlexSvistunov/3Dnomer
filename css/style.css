@@ -13,3 +13,269 @@
 @import '../components/works.css';
 @import '../components/question.css';
 @import '../components/footer.css';
+
+
+@media(max-width:1300px) {
+    .header__inner {
+        flex-direction: column;
+    }
+
+    .header__contact {
+        flex-direction: column;
+    }
+
+    .header__contact-phone {
+        margin-right: 0;
+    }
+
+    .header__contact-btn {
+        margin-bottom: 10px;
+    }
+
+    .header__contact-phone {
+        order: 2;
+    }
+
+    .nav__list-link {
+        padding: 10px;
+    }
+
+    .works__list {
+        justify-content: center;
+    }
+
+    .question__item-btn {
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+} 
+
+@media(max-width:1200px){
+    .souvenir__list {
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+
+
+@media(max-width:900px) {
+    .header__inner {
+        align-items: flex-start;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header__nav {
+        transform: translateY(-200%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--white-color);
+        z-index: 2;
+        transition: transform .35s ease-in-out;
+    }
+
+    .header__nav.active {
+        transform: translate(0);
+        transition: transform .35s ease-in-out;
+    }
+
+    .nav__list {
+        display: block;
+        padding: 100px;
+        text-align: center;
+    }
+
+    .nav__list-link {
+        font-size: 25px;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .souvenir__item {
+        grid-column: 3 span;
+    }
+}
+
+
+
+
+@media(max-width:768.99px) {
+    .hero__title {
+        font-size: 45px;
+    }
+
+    .header {
+        padding-top: 36px;
+        padding-bottom: 65px;
+    }
+
+    .hero {
+        padding: 0 0 70px;
+    }
+
+    .about__content {
+        flex-direction: column;
+    }
+
+    .about__descr:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+
+    .about {
+        padding-bottom: 70px;
+    }
+
+    .souvenir {
+        padding-bottom: 60px;
+    }
+
+    .works {
+        padding-bottom: 60px;
+    }
+
+    .question {
+        padding-bottom: 90px;
+    }
+
+    .question__item-box {
+        padding: 20px 31px 20px 56px;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__nav-item {
+        flex-grow: 1;
+    }
+
+    .footer__nav-list {
+        margin-bottom: 30px;
+    }
+    
+    .footer-right {
+        align-items: center;
+    }
+
+    .footer__nav-item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .footer {
+        padding: 30px 0 30px;
+    }
+}
+
+@media(max-width:620px) {
+    .souvenir__list {
+        grid-template-columns: auto;
+    }
+}
+
+
+
+@media(max-width:544.99px) {
+    .hero__title {
+        font-size: 38px;
+        order: 1;
+    }
+
+    .hero__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero__socials {
+        order: 2;
+        margin-right: 0;
+        transform: translateY(0);
+    }
+
+    .hero__content {
+        margin-bottom: 25px;
+    }
+
+    .header {
+        padding-top: 18px;
+        padding-bottom: 40px;
+    }
+
+    .burger-menu {
+        top: 20px;
+    }
+
+    .hero {
+        padding: 0 0 40px;
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .about {
+        padding-bottom: 50px;
+    }
+
+    .souvenir {
+        padding-bottom: 35px;
+    }
+
+    .souvenir__btn {
+        min-width: 289px;
+    }
+
+    .works {
+        padding-bottom: 40px;
+    }
+
+    .question__item-box {
+        padding: 17px 8px 18px 46px;
+    }
+
+    .question {
+        padding-bottom: 55px;
+    }
+
+    .footer__item-link {
+        font-size: 13px;
+    }
+
+    .footer__socials {
+        gap: 7px;
+    }
+
+   
+}
+
+@media (max-width: 416px) {
+    .footer__nav-list {
+        flex-direction: column;
+    }
+
+    .footer__nav-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .footer__item-tilte {
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        align-items: flex-start;
+    }
+
+}
+
+/*подумать с хедером c отступами + числа в span, проверить адаптивное меню, hero, добавить штуку арметия лебедева, допилить нормально спойлер */

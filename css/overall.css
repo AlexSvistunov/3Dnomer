@@ -104,3 +104,7 @@ img {
     align-items: center;
 }
 
+body.lock {
+    overflow-y: hidden;
+}
+
