@@ -14,6 +14,16 @@
 @import '../components/question.css';
 @import '../components/footer.css';
 
+@media(max-width:1430px) {
+    .header__contact-phone {
+        font-size: 15px;
+    }
+
+    .nav__list-link {
+        font-size: 12px;
+    }
+}
+
 
 @media(max-width:1300px) {
     .header__inner {
@@ -34,10 +44,12 @@
 
     .header__contact-phone {
         order: 2;
+        font-size: 16px;
     }
 
     .nav__list-link {
         padding: 10px;
+        font-size: 16px;
     }
 
     .works__list {
@@ -88,6 +100,7 @@
         display: block;
         padding: 100px;
         text-align: center;
+        overflow-y: auto;
     }
 
     .nav__list-link {
@@ -180,6 +193,18 @@
 @media(max-width:620px) {
     .souvenir__list {
         grid-template-columns: auto;
+    }
+
+    .souvenir__item {
+        text-align: center;
+    }
+
+    .souvenir__item-img {
+        margin: 0 auto;
+    }
+
+    .btn-cart {
+        background-position: 30% 11px;
     }
 }
 

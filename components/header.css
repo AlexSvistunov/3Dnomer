@@ -22,6 +22,7 @@
 
 .nav__list {
     display: flex;
+    gap: 15px;
 }
 
 /* .nav__list-item:not(:last-child) {
@@ -30,7 +31,7 @@
 
 .nav__list-link {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background-color: transparent;
 }
 
